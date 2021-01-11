@@ -1,0 +1,38 @@
+$support-reduced-motion: true;
+
+@if $support-reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    button,
+    input,
+    textarea,
+    img,
+    video,
+    .image-responsive,
+    .video-responsive,
+    .navbar,
+    .notepad,
+    .notification,
+    .modal,
+    .card,
+    .table,
+    .list,
+    .alert,
+    .form,
+    .form-group,
+    .jumbotron,
+    .progress-bar,
+    .pagination,
+    .dropstart,
+    .dropup,
+    .dropdown,
+    .dropend,
+    .fade {
+        -webkit-transition: none;
+        transition: none;
+     }
+
+     html {
+      scroll-behavior: auto;
+     }
+  }
+}

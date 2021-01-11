@@ -1,0 +1,514 @@
+.rotate-30\@phone,
+.rotate-60\@phone,
+.rotate-90\@phone,
+.rotate-120\@phone,
+.rotate-150\@phone,
+.rotate-180\@phone,
+.rotate-210\@phone,
+.rotate-240\@phone,
+.rotate-270\@phone,
+.rotate-300\@phone,
+.rotate-330\@phone,
+.rotate-360\@phone {
+  position: absolute;
+}
+
+.rotate-30\@phone {
+  transform: rotate(30deg);
+}
+
+.rotate-60\@phone {
+  transform: rotate(60deg);
+}
+
+.rotate-90\@phone {
+  transform: rotate(90deg);
+}
+
+.rotate-120\@phone {
+  transform: rotate(120deg);
+}
+
+.rotate-150\@phone {
+  transform: rotate(150deg);
+}
+
+.rotate-180\@phone {
+  transform: rotate(180deg);
+}
+
+.rotate-210\@phone {
+  transform: rotate(210deg);
+}
+
+.rotate-240\@phone {
+  transform: rotate(240deg);
+}
+
+.rotate-270\@phone {
+  transform: rotate(270deg);
+}
+
+.rotate-300\@phone {
+  transform: rotate(300deg);
+}
+
+.rotate-330\@phone {
+  transform: rotate(330deg);
+}
+
+.rotate-360\@phone {
+  transform: rotate(360deg);
+}
+
+.rotate-30\:hover\@phone:hover,
+.rotate-60\:hover\@phone:hover,
+.rotate-90\:hover\@phone:hover,
+.rotate-120\:hover\@phone:hover,
+.rotate-150\:hover\@phone:hover,
+.rotate-180\:hover\@phone:hover,
+.rotate-210\:hover\@phone:hover,
+.rotate-240\:hover\@phone:hover,
+.rotate-270\:hover\@phone:hover,
+.rotate-300\:hover\@phone:hover,
+.rotate-330\:hover\@phone:hover,
+.rotate-360\:hover\@phone:hover {
+  position: absolute;
+  transition: transform .6s .1s ease;
+}
+
+.rotate-30\:hover\@phone:hover {
+  transform: rotate(30deg);
+}
+
+.rotate-60\:hover\@phone:hover {
+  transform: rotate(60deg);
+}
+
+.rotate-90\:hover\@phone:hover {
+  transform: rotate(90deg);
+}
+
+.rotate-120\:hover\@phone:hover {
+  transform: rotate(120deg);
+}
+
+.rotate-150\:hover\@phone:hover {
+  transform: rotate(150deg);
+}
+
+.rotate-180\:hover\@phone:hover {
+  transform: rotate(180deg);
+}
+
+.rotate-210\:hover\@phone:hover {
+  transform: rotate(210deg);
+}
+
+.rotate-240\:hover\@phone:hover {
+  transform: rotate(240deg);
+}
+
+.rotate-270\:hover\@phone:hover {
+  transform: rotate(270deg);
+}
+
+.rotate-300\:hover\@phone:hover {
+  transform: rotate(300deg);
+}
+
+.rotate-330\:hover\@phone:hover {
+  transform: rotate(330deg);
+}
+
+.rotate-360\:hover\@phone:hover {
+  transform: rotate(360deg);
+}
+
+@media (max-width: $small-phone-max-width) {
+  .rotate-30\@small-phone,
+  .rotate-60\@small-phone,
+  .rotate-90\@small-phone,
+  .rotate-120\@small-phone,
+  .rotate-150\@small-phone,
+  .rotate-180\@small-phone,
+  .rotate-210\@small-phone,
+  .rotate-240\@small-phone,
+  .rotate-270\@small-phone,
+  .rotate-300\@small-phone,
+  .rotate-330\@small-phone,
+  .rotate-360\@small-phone {
+    position: absolute;
+  }
+
+  .rotate-30\@small-phone {
+    transform: rotate(30deg);
+  }
+
+  .rotate-60\@small-phone {
+    transform: rotate(60deg);
+  }
+
+  .rotate-90\@small-phone {
+    transform: rotate(90deg);
+  }
+
+  .rotate-120\@small-phone {
+    transform: rotate(120deg);
+  }
+
+  .rotate-150\@small-phone {
+    transform: rotate(150deg);
+  }
+
+  .rotate-180\@small-phone {
+    transform: rotate(180deg);
+  }
+
+  .rotate-210\@small-phone {
+    transform: rotate(210deg);
+  }
+
+  .rotate-240\@small-phone {
+    transform: rotate(240deg);
+  }
+
+  .rotate-270\@small-phone {
+    transform: rotate(270deg);
+  }
+
+  .rotate-300\@small-phone {
+    transform: rotate(300deg);
+  }
+
+  .rotate-330\@small-phone {
+    transform: rotate(330deg);
+  }
+
+  .rotate-360\@small-phone {
+    transform: rotate(360deg);
+  }
+
+  .rotate-30\:hover\@small-phone:hover,
+  .rotate-60\:hover\@small-phone:hover,
+  .rotate-90\:hover\@small-phone:hover,
+  .rotate-120\:hover\@small-phone:hover,
+  .rotate-150\:hover\@small-phone:hover,
+  .rotate-180\:hover\@small-phone:hover,
+  .rotate-210\:hover\@small-phone:hover,
+  .rotate-240\:hover\@small-phone:hover,
+  .rotate-270\:hover\@small-phone:hover,
+  .rotate-300\:hover\@small-phone:hover,
+  .rotate-330\:hover\@small-phone:hover,
+  .rotate-360\:hover\@small-phone:hover {
+    position: absolute;
+    transition: transform .6s .1s ease;
+  }
+
+  .rotate-30\:hover\@small-phone:hover {
+    transform: rotate(30deg);
+  }
+
+  .rotate-60\:hover\@small-phone:hover {
+    transform: rotate(60deg);
+  }
+
+  .rotate-90\:hover\@small-phone:hover {
+    transform: rotate(90deg);
+  }
+
+  .rotate-120\:hover\@small-phone:hover {
+    transform: rotate(120deg);
+  }
+
+  .rotate-150\:hover\@small-phone:hover {
+    transform: rotate(150deg);
+  }
+
+  .rotate-180\:hover\@small-phone:hover {
+    transform: rotate(180deg);
+  }
+
+  .rotate-210\:hover\@small-phone:hover {
+    transform: rotate(210deg);
+  }
+
+  .rotate-240\:hover\@small-phone:hover {
+    transform: rotate(240deg);
+  }
+
+  .rotate-270\:hover\@small-phone:hover {
+    transform: rotate(270deg);
+  }
+
+  .rotate-300\:hover\@small-phone:hover {
+    transform: rotate(300deg);
+  }
+
+  .rotate-330\:hover\@small-phone:hover {
+    transform: rotate(330deg);
+  }
+
+  .rotate-360\:hover\@small-phone:hover {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+  .rotate-30\@tablet,
+  .rotate-60\@tablet,
+  .rotate-90\@tablet,
+  .rotate-120\@tablet,
+  .rotate-150\@tablet,
+  .rotate-180\@tablet,
+  .rotate-210\@tablet,
+  .rotate-240\@tablet,
+  .rotate-270\@tablet,
+  .rotate-300\@tablet,
+  .rotate-330\@tablet,
+  .rotate-360\@tablet {
+    position: absolute;
+  }
+
+  .rotate-30\@tablet {
+    transform: rotate(30deg);
+  }
+
+  .rotate-60\@tablet {
+    transform: rotate(60deg);
+  }
+
+  .rotate-90\@tablet {
+    transform: rotate(90deg);
+  }
+
+  .rotate-120\@tablet {
+    transform: rotate(120deg);
+  }
+
+  .rotate-150\@tablet {
+    transform: rotate(150deg);
+  }
+
+  .rotate-180\@tablet {
+    transform: rotate(180deg);
+  }
+
+  .rotate-210\@tablet {
+    transform: rotate(210deg);
+  }
+
+  .rotate-240\@tablet {
+    transform: rotate(240deg);
+  }
+
+  .rotate-270\@tablet {
+    transform: rotate(270deg);
+  }
+
+  .rotate-300\@tablet {
+    transform: rotate(300deg);
+  }
+
+  .rotate-330\@tablet {
+    transform: rotate(330deg);
+  }
+
+  .rotate-360\@tablet {
+    transform: rotate(360deg);
+  }
+
+  .rotate-30\:hover\@tablet:hover,
+  .rotate-60\:hover\@tablet:hover,
+  .rotate-90\:hover\@tablet:hover,
+  .rotate-120\:hover\@tablet:hover,
+  .rotate-150\:hover\@tablet:hover,
+  .rotate-180\:hover\@tablet:hover,
+  .rotate-210\:hover\@tablet:hover,
+  .rotate-240\:hover\@tablet:hover,
+  .rotate-270\:hover\@tablet:hover,
+  .rotate-300\:hover\@tablet:hover,
+  .rotate-330\:hover\@tablet:hover,
+  .rotate-360\:hover\@tablet:hover {
+    position: absolute;
+    transition: transform .6s .1s ease;
+  }
+
+  .rotate-30\:hover\@tablet:hover {
+    transform: rotate(30deg);
+  }
+
+  .rotate-60\:hover\@tablet:hover {
+    transform: rotate(60deg);
+  }
+
+  .rotate-90\:hover\@tablet:hover {
+    transform: rotate(90deg);
+  }
+
+  .rotate-120\:hover\@tablet:hover {
+    transform: rotate(120deg);
+  }
+
+  .rotate-150\:hover\@tablet:hover {
+    transform: rotate(150deg);
+  }
+
+  .rotate-180\:hover\@tablet:hover {
+    transform: rotate(180deg);
+  }
+
+  .rotate-210\:hover\@tablet:hover {
+    transform: rotate(210deg);
+  }
+
+  .rotate-240\:hover\@tablet:hover {
+    transform: rotate(240deg);
+  }
+
+  .rotate-270\:hover\@tablet:hover {
+    transform: rotate(270deg);
+  }
+
+  .rotate-300\:hover\@tablet:hover {
+    transform: rotate(300deg);
+  }
+
+  .rotate-330\:hover\@tablet:hover {
+    transform: rotate(330deg);
+  }
+
+  .rotate-360\:hover\@tablet:hover {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: $laptop-min-width) {
+  .rotate-30\@laptop,
+  .rotate-60\@laptop,
+  .rotate-90\@laptop,
+  .rotate-120\@laptop,
+  .rotate-150\@laptop,
+  .rotate-180\@laptop,
+  .rotate-210\@laptop,
+  .rotate-240\@laptop,
+  .rotate-270\@laptop,
+  .rotate-300\@laptop,
+  .rotate-330\@laptop,
+  .rotate-360\@laptop {
+    position: absolute;
+  }
+
+  .rotate-30\@laptop {
+    transform: rotate(30deg);
+  }
+
+  .rotate-60\@laptop {
+    transform: rotate(60deg);
+  }
+
+  .rotate-90\@laptop {
+    transform: rotate(90deg);
+  }
+
+  .rotate-120\@laptop {
+    transform: rotate(120deg);
+  }
+
+  .rotate-150\@laptop {
+    transform: rotate(150deg);
+  }
+
+  .rotate-180\@laptop {
+    transform: rotate(180deg);
+  }
+
+  .rotate-210\@laptop {
+    transform: rotate(210deg);
+  }
+
+  .rotate-240\@laptop {
+    transform: rotate(240deg);
+  }
+
+  .rotate-270\@laptop {
+    transform: rotate(270deg);
+  }
+
+  .rotate-300\@laptop {
+    transform: rotate(300deg);
+  }
+
+  .rotate-330\@laptop {
+    transform: rotate(330deg);
+  }
+
+  .rotate-360\@laptop {
+    transform: rotate(360deg);
+  }
+
+  .rotate-30\:hover\@laptop:hover,
+  .rotate-60\:hover\@laptop:hover,
+  .rotate-90\:hover\@laptop:hover,
+  .rotate-120\:hover\@laptop:hover,
+  .rotate-150\:hover\@laptop:hover,
+  .rotate-180\:hover\@laptop:hover,
+  .rotate-210\:hover\@laptop:hover,
+  .rotate-240\:hover\@laptop:hover,
+  .rotate-270\:hover\@laptop:hover,
+  .rotate-300\:hover\@laptop:hover,
+  .rotate-330\:hover\@laptop:hover,
+  .rotate-360\:hover\@laptop:hover {
+    position: absolute;
+    transition: transform .6s .1s ease;
+  }
+
+  .rotate-30\:hover\@laptop:hover {
+    transform: rotate(30deg);
+  }
+
+  .rotate-60\:hover\@laptop:hover {
+    transform: rotate(60deg);
+  }
+
+  .rotate-90\:hover\@laptop:hover {
+    transform: rotate(90deg);
+  }
+
+  .rotate-120\:hover\@laptop:hover {
+    transform: rotate(120deg);
+  }
+
+  .rotate-150\:hover\@laptop:hover {
+    transform: rotate(150deg);
+  }
+
+  .rotate-180\:hover\@laptop:hover {
+    transform: rotate(180deg);
+  }
+
+  .rotate-210\:hover\@laptop:hover {
+    transform: rotate(210deg);
+  }
+
+  .rotate-240\:hover\@laptop:hover {
+    transform: rotate(240deg);
+  }
+
+  .rotate-270\:hover\@laptop:hover {
+    transform: rotate(270deg);
+  }
+
+  .rotate-300\:hover\@laptop:hover {
+    transform: rotate(300deg);
+  }
+
+  .rotate-330\:hover\@laptop:hover {
+    transform: rotate(330deg);
+  }
+
+  .rotate-360\:hover\@laptop:hover {
+    transform: rotate(360deg);
+  }
+}
+

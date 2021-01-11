@@ -1,0 +1,256 @@
+.btn {
+  font-family: var(--pendeza-sans-serif);
+  border: var(--pendeza-dark) solid 0.08rem;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.85;
+  transition: opacity 500ms ease-out;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.btn.muted {
+  color: var(--pendeza-light);
+  cursor: not-allowed;
+}
+
+.btn.dark {
+  color: var(--pendeza-light);
+}
+
+.btn-xs {
+  font-size: 0.7rem;
+}
+
+.btn-sm {
+  font-size: 0.9rem;
+}
+
+.btn-lg {
+  font-size: 1.2rem;
+}
+
+.btn-xl {
+  font-size: 1.4rem;
+}
+
+.text-button {
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  position: relative;
+  overflow: hidden;
+
+  .btn-group-item {
+    margin: 0;
+  }
+}
+
+@mixin outline-animation-hover {
+  transition: background-color 1500ms ease;
+}
+
+.btn-outlined-primary:hover, .btn-outlined-secondary:hover, .btn-outlined-success:hover, .btn-outlined-danger:hover, .btn-outlined-warning:hover, .btn-outlined-muted:hover, .btn-outlined-dark:hover, .btn-outlined-light:hover, .btn-outlined-blue:hover, .btn-outlined-green:hover, .btn-outlined-yellow:hover, .btn-outlined-orange:hover, .btn-outlined-pink:hover,
+ .btn-outlined-red:hover, .btn-outlined-purple:hover, .btn-outlined-teal:hover, .btn-outlined-indigo:hover, .btn-outlined-brown:hover, .btn-outlined-violet:hover, .btn-outlined-grey:hover, .btn-outlined-black:hover {
+  @include outline-animation-hover;
+}
+
+.btn-outlined-primary {
+  border: 1px solid var(--pendeza-primary);
+}
+
+.btn-outlined-primary:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-primary);
+}
+
+.btn-outlined-secondary {
+  border: 1px solid var(--pendeza-secondary);
+}
+
+.btn-outlined-secondary:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-secondary);
+}
+
+.btn-outlined-success {
+  border: 1px solid var(--pendeza-success);
+}
+
+.btn-outlined-success:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-success);
+}
+
+.btn-outlined-danger {
+  border: 1px solid var(--pendeza-danger);
+}
+
+.btn-outlined-danger:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-danger);
+}
+
+.btn-outlined-warning {
+  border: 1px solid var(--pendeza-warning);
+}
+
+.btn-outlined-warning:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-warning);
+}
+
+.btn-outlined-muted {
+  border: 1px solid var(--pendeza-muted);
+  cursor: not-allowed;
+}
+
+.btn-outlined-muted:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-muted);
+}
+
+.btn-outlined-dark {
+  border: 1px solid var(--pendeza-dark);
+}
+
+.btn-outlined-dark:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-dark);
+}
+
+.btn-outlined-light {
+  border: 1px solid var(--pendeza-light);
+}
+
+.btn-outlined-light:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-light);
+}
+
+.btn-outlined-blue {
+  border: 1px solid var(--pendeza-blue);
+}
+
+.btn-outlined-blue:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-blue);
+}
+
+.btn-outlined-green {
+  border: 1px solid var(--pendeza-green);
+}
+
+.btn-outlined-green:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-green);
+}
+
+.btn-outlined-yellow {
+  border: 1px solid var(--pendeza-yellow);
+}
+
+.btn-outlined-yellow:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-yellow);
+}
+
+.btn-outlined-orange {
+  border: 1px solid var(--pendeza-orange);
+}
+
+.btn-outlined-orange:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-orange);
+}
+
+.btn-outlined-pink {
+  border: 1px solid var(--pendeza-pink);
+}
+
+.btn-outlined-pink:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-pink);
+}
+
+.btn-outlined-red {
+  border: 1px solid var(--pendeza-red);
+}
+
+.btn-outlined-red:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-red);
+}
+
+.btn-outlined-purple {
+  border: 1px solid var(--pendeza-purple);
+}
+
+.btn-outlined-purple:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-purple);
+}
+
+.btn-outlined-teal {
+  border: 1px solid var(--pendeza-teal);
+}
+
+.btn-outlined-teal:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-teal);
+}
+
+.btn-outlined-indigo {
+  border: 1px solid var(--pendeza-indigo);
+}
+
+.btn-outlined-indigo:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-indigo);
+}
+
+.btn-outlined-brown {
+  border: 1px solid var(--pendeza-brown);
+}
+
+.btn-outlined-brown:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-brown);
+}
+
+.btn-outlined-violet {
+  border: 1px solid var(--pendeza-violet);
+}
+
+.btn-outlined-violet:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-violet);
+}
+
+.btn-outlined-grey {
+  border: 1px solid var(--pendeza-grey);
+}
+
+.btn-outlined-grey:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-grey);
+}
+
+.btn-outlined-black {
+  border: 1px solid var(--pendeza-black);
+}
+
+.btn-outlined-black:hover {
+  border: 0.7px solid var(--pendeza-dark);
+  background-color: var(--pendeza-black);
+}

@@ -1,0 +1,1 @@
+Incase you want pendeza css when it has namespaces. This can be useful if you are using pemndeza with another css framework

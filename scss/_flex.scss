@@ -1,0 +1,379 @@
+.dis-flex,
+.dis-flex\@phone {
+  display: flex;
+}
+
+.flex-wrap,
+.flex-wrap\@phone {
+  flex-wrap: wrap;
+}
+
+.flex-row,
+.flex-row\@phone {
+  flex-direction: row;
+}
+
+.flex-column,
+.flex-column\@phone {
+  flex-direction: column;
+}
+
+.justify-between,
+.justify-between\@phone {
+  justify-content: space-between;
+}
+
+.justify-around,
+.justify-around\@phone {
+  justify-content: space-around;
+}
+
+.justify-evenly,
+.justify-evenly\@phone {
+  justify-content: space-evenly;
+}
+
+.justify-center,
+.justify-center\@phone {
+  justify-content: center;
+}
+
+.justify-start,
+.justify-start\@phone {
+  justify-content: flex-start;
+}
+
+.justify-end,
+.justify-end\@phone {
+  justify-content: flex-end;
+}
+
+.appear-1,
+.appear-1\@phone {
+  order: 1;
+}
+
+.appear-2,
+.appear-2\@phone {
+  order: 2;
+}
+
+.appear-3,
+.appear-3\@phone {
+  order: 3;
+}
+
+.appear-4,
+.appear-4\@phone {
+  order: 4;
+}
+
+.appear-5,
+.appear-5\@phone {
+  order: 5;
+}
+
+.appear-6,
+.appear-6\@phone {
+  order: 6;
+}
+
+.appear-7,
+.appear-7\@phone {
+  order: 7;
+}
+
+.appear-8,
+.appear-8\@phone {
+  order: 8;
+}
+
+.appear-9,
+.appear-9\@phone {
+  order: 9;
+}
+
+.appear-10,
+.appear-10\@phone {
+  order: 10;
+}
+
+.appear-11,
+.appear-11\@phone {
+  order: 11;
+}
+
+.appear-12,
+.appear-12\@phone {
+  order: 12;
+}
+
+@media (max-width: $small-phone-max-width) {
+  .dis-flex\@small-phone {
+    display: flex;
+  }
+
+  .flex-wrap\@small-phone {
+    flex-wrap: wrap;
+  }
+
+  .flex-row\@small-phone {
+    flex-direction: row;
+  }
+
+  .flex-column\@small-phone {
+    flex-direction: column;
+  }
+
+  .justify-between\@small-phone {
+    justify-content: space-between;
+  }
+
+  .justify-around\@small-phone {
+    justify-content: space-around;
+  }
+
+  .justify-evenly\@small-phone {
+    justify-content: space-evenly;
+  }
+
+  .justify-center\@small-phone {
+    justify-content: center;
+  }
+
+  .justify-start\@small-phone {
+    justify-content: flex-start;
+  }
+
+  .justify-end\@small-phone {
+    justify-content: flex-end;
+  }
+
+  .appear-1\@small-phone {
+    order: 1;
+  }
+
+  .appear-2\@small-phone {
+    order: 2;
+  }
+
+  .appear-3\@small-phone {
+    order: 3;
+  }
+
+  .appear-4\@small-phone {
+    order: 4;
+  }
+
+  .appear-5\@small-phone {
+    order: 5;
+  }
+
+  .appear-6\@small-phone {
+    order: 6;
+  }
+
+  .appear-7\@small-phone {
+    order: 7;
+  }
+
+  .appear-8\@small-phone {
+    order: 8;
+  }
+
+  .appear-9\@small-phone {
+    order: 9;
+  }
+
+  .appear-10\@small-phone {
+    order: 10;
+  }
+
+  .appear-11\@small-phone {
+    order: 11;
+  }
+
+  .appear-12\@small-phone {
+    order: 12;
+  }
+}
+
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+  .dis-flex\@tablet {
+    display: flex;
+  }
+
+  .flex-wrap\@tablet {
+    flex-wrap: wrap;
+  }
+
+  .flex-row\@tablet {
+    flex-direction: row;
+  }
+
+  .flex-column\@tablet {
+    flex-direction: column;
+  }
+
+  .justify-between\@tablet {
+    justify-content: space-between;
+  }
+
+  .justify-around\@tablet {
+    justify-content: space-around;
+  }
+
+  .justify-evenly\@tablet {
+    justify-content: space-evenly;
+  }
+
+  .justify-center\@tablet {
+    justify-content: center;
+  }
+
+  .justify-start\@tablet {
+    justify-content: flex-start;
+  }
+
+  .justify-end\@tablet {
+    justify-content: flex-end;
+  }
+
+  .appear-1\@tablet {
+    order: 1;
+  }
+
+  .appear-2\@tablet {
+    order: 2;
+  }
+
+  .appear-3\@tablet {
+    order: 3;
+  }
+
+  .appear-4\@tablet {
+    order: 4;
+  }
+
+  .appear-5\@tablet {
+    order: 5;
+  }
+
+  .appear-6\@tablet {
+    order: 6;
+  }
+
+  .appear-7\@tablet {
+    order: 7;
+  }
+
+  .appear-8\@tablet {
+    order: 8;
+  }
+
+  .appear-9\@tablet {
+    order: 9;
+  }
+
+  .appear-10\@tablet {
+    order: 10;
+  }
+
+  .appear-11\@tablet {
+    order: 11;
+  }
+
+  .appear-12\@tablet {
+    order: 12;
+  }
+}
+
+@media (min-width: $laptop-min-width) {
+  .dis-flex\@laptop {
+    display: flex;
+  }
+
+  .flex-wrap\@laptop {
+    flex-wrap: wrap;
+  }
+
+  .flex-row\@laptop {
+    flex-direction: row;
+  }
+
+  .flex-column\@laptop {
+    flex-direction: column;
+  }
+
+  .justify-between\@laptop {
+    justify-content: space-between;
+  }
+
+  .justify-around\@laptop {
+    justify-content: space-around;
+  }
+
+  .justify-evenly\@laptop {
+    justify-content: space-evenly;
+  }
+
+  .justify-center\@laptop {
+    justify-content: center;
+  }
+
+  .justify-start\@laptop {
+    justify-content: flex-start;
+  }
+
+  .justify-end\@laptop {
+    justify-content: flex-end;
+  }
+
+  .appear-1\@laptop {
+    order: 1;
+  }
+
+  .appear-2\@laptop {
+    order: 2;
+  }
+
+  .appear-3\@laptop {
+    order: 3;
+  }
+
+  .appear-4\@laptop {
+    order: 4;
+  }
+
+  .appear-5\@laptop {
+    order: 5;
+  }
+
+  .appear-6\@laptop {
+    order: 6;
+  }
+
+  .appear-7\@laptop {
+    order: 7;
+  }
+
+  .appear-8\@laptop {
+    order: 8;
+  }
+
+  .appear-9\@laptop {
+    order: 9;
+  }
+
+  .appear-10\@laptop {
+    order: 10;
+  }
+
+  .appear-11\@laptop {
+    order: 11;
+  }
+
+  .appear-12\@laptop {
+    order: 12;
+  }
+}

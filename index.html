@@ -7,6 +7,11 @@
   <meta name="description" content="">
   <link rel="stylesheet" href="./css/pendeza.css">
   <script src="./vue3.js"></script>
+  <style language="css">
+.color-text { color: var(--pendeza-light-darken-2); opacity: 0.7; font-size: 0.85rem; font-family: var(--pendeza-monospace)  }
+.color-title { text-align: center; margin-bottom: 0.5rem; text-transform: uppercase }
+
+  </style>
   <title>Monito SCSS</title>
 </head>
 <body>
@@ -15,26 +20,58 @@
   <script defer langauge="javascript">
     const app = Vue.createApp({
       template: `
+        <Navbar></Navbar>
         <Header></Header>
         <Main></Main>
      `
     })
-    app.component('Header',{
+    app.component('Navbar',{
       template: `
-      <header class="navbar">
+      <div class="navbar pos-sticky sticky-top z-index-4">
         <div class="navbar-body wrapper-sm">
-          <span class="navbar-brand">Pendeza</span>
+          <span class="navbar-brand"><a href="#home">Pendeza</a></span>
           <nav>
             <ul>
-              <li>Home</li>
-              <li>Home</li>
-              <li>Home</li>
-              <li>Home</li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#colors">Color</a></li>
+              <li><a href="./css/pendeza.css">Download</a></li>
+              <li><a href="./css/pendeza.css">Blog</a></li>
             </ul>
           </nav>
         </div>
-      </header>
+      </div>
      `
+    })
+    app.component('Header',{
+      template: `
+        <header id="home" class="wrapper-sm h-100vh pt-3">
+          <h1>{{ title }}</h1>
+           <p class="lead">{{ msg }}</p>
+           <div class="dis-flex justify-evenly">
+           <a href="./css/pendeza.css"><button class="btn">Download</button></a>
+           <button class="btn">Github</button>
+   </div>
+
+   </div>
+           <h3 class="mt-4">Why use Pendeza?</h3>
+           <ul class="list" v-for="list in myList">
+             <li class="list-item">{{ list }}</li>
+           </ul>
+         </header>
+   `,
+      data() {
+        return {
+          title: 'Pendeza',
+          msg: 'Consectetur eos odio suscipit quibusdam esse amet. Odit reiciendis odit?',
+              myList: [
+                    'It is fun',
+                    'It is enjoyable',
+                    'Has lost of color to pick from',
+                    'Has easy classes',
+                    'Can be extended through SCSS'
+                  ]
+          }
+      }
     })
     app.component('Main',{
       template: `
@@ -43,32 +80,139 @@
     })
     app.component('Colors',{
       template: `
-       <section id="colors" class="wrapper-sm">{{ colors }}</section>
+       <section id="colors" class="wrapper-sm pt-3">
+          <h2>Colors</h2>
+         <div class="dis-grid cols-3">
+            <div v-for="color in colors">
+               <h4 class="color-title">{{ color.name }}</h4>
+               <div :class="color.class">
+                  <div :class="color.classes[0]" style="height: 1.8rem; text-align: center; padding-top: 0.23rem"><span class="color-text">{{ color.classes[0] }}</span></div>
+                  <div :class="color.classes[1]" style="height: 1.5rem; text-align: center; padding-top: 0.23rem"><span class="color-text">{{ color.classes[0] }}</span></div>
+                  <div :class="color.classes[2]" style="height: 1.5rem; text-align: center; padding-top: 0.23rem"><span class="color-text">{{ color.classes[0] }}</span></div>
+                  <div :class="color.classes[3]" style="height: 1.5rem; text-align: center; padding-top: 0.23rem"><span class="color-text">{{ color.classes[3] }}</span></div>
+                  <div :class="color.classes[4]" style="height: 1.5rem; text-align: center; padding-top: 0.23rem"><span class="color-text">{{ color.classes[4] }}</span></div>
+                  <div :class="color.classes[5]" style="height: 1.5rem; text-align: center; padding-top: 0.23rem"><span class="color-text">{{ color.classes[5] }}</span></div>
+                  <div :class="color.classes[6]" style="height: 1.5rem; text-align: center; padding-top: 0.23rem"><span class="color-text">{{ color.classes[6] }}</</span></div>
+                  <div :class="color.classes[7]" style="height: 1.5rem; text-align: center; padding-top: 0.23rem"><span class="color-text">{{ color.classes[7] }}</span></div>
+                  <div :class="color.classes[8]" style="height: 1.5rem; text-align: center; padding-top: 0.23rem"><span class="color-text">{{ color.classes[8] }}</span></div>
+                  <div :class="color.classes[9]" style="height: 1.5rem; text-align: center; padding-top: 0.23rem"><span class="color-text">{{ color.classes[9] }}</span></div>
+               </div>
+           </div>
+         </div>
+        </section>
      `,
       data() {
         return {
           colors: [
-              ['primary lighten-1','primary lighten-2','primary lighten-3','primary lighten-4', 'primary ', 'primary lighten-1','primary lighten-2','primary lighten-3','primary lighten-4',],
-              ['secondary lighten-1','secondary lighten-2','secondary lighten-3','secondary lighten-4', 'secondary ', 'secondary lighten-1','secondary lighten-2','secondary lighten-3','secondary lighten-4',],
-              ['success lighten-1','success lighten-2','success lighten-3','success lighten-4', 'success ', 'success lighten-1','success lighten-2','success lighten-3','success lighten-4',],
-              ['danger lighten-1','danger lighten-2','danger lighten-3','danger lighten-4', 'danger ', 'danger lighten-1','danger lighten-2','danger lighten-3','danger lighten-4',],
-              ['warning lighten-1','warning lighten-2','warning lighten-3','warning lighten-4', 'warning ', 'warning lighten-1','warning lighten-2','warning lighten-3','warning lighten-4',],
-              ['muted lighten-1','muted lighten-2','muted lighten-3','muted lighten-4', 'muted ', 'muted lighten-1','muted lighten-2','muted lighten-3','muted lighten-4',],
-              ['dark lighten-1','dark lighten-2','dark lighten-3','dark lighten-4', 'dark ', 'dark lighten-1','dark lighten-2','dark lighten-3','dark lighten-4',],
-              ['light lighten-1','light lighten-2','light lighten-3','light lighten-4', 'light ', 'light lighten-1','light lighten-2','light lighten-3','light lighten-4',],
-              ['blue lighten-1','blue lighten-2','blue lighten-3','blue lighten-4', 'blue ', 'blue lighten-1','blue lighten-2','blue lighten-3','blue lighten-4',],
-              ['green lighten-1','green lighten-2','green lighten-3','green lighten-4', 'green ', 'green lighten-1','green lighten-2','green lighten-3','green lighten-4',],
-              ['yellow lighten-1','yellow lighten-2','yellow lighten-3','yellow lighten-4', 'yellow ', 'yellow lighten-1','yellow lighten-2','yellow lighten-3','yellow lighten-4',],
-              ['orange lighten-1','orange lighten-2','orange lighten-3','orange lighten-4', 'orange ', 'orange lighten-1','orange lighten-2','orange lighten-3','orange lighten-4',],
-              ['pink lighten-1','pink lighten-2','pink lighten-3','pink lighten-4', 'pink ', 'pink lighten-1','pink lighten-2','pink lighten-3','pink lighten-4',],
-              ['red lighten-1','red lighten-2','red lighten-3','red lighten-4', 'red', 'red lighten-1','red lighten-2','red lighten-3','red lighten-4'],
-              ['purple lighten-1','purple lighten-2','purple lighten-3','purple lighten-4', 'purple ', 'purple lighten-1','purple lighten-2','purple lighten-3','purple lighten-4',],
-              ['teal lighten-1','teal lighten-2','teal lighten-3','teal lighten-4', 'teal ', 'teal lighten-1','teal lighten-2','teal lighten-3','teal lighten-4',],
-              ['indigo lighten-1','indigo lighten-2','indigo lighten-3','indigo lighten-4', 'indigo ', 'indigo lighten-1','indigo lighten-2','indigo lighten-3','indigo lighten-4',],
-              ['brown lighten-1','brown lighten-2','brown lighten-3','brown lighten-4', 'brown ', 'brown lighten-1','brown lighten-2','brown lighten-3','brown lighten-4',],
-              ['violet lighten-1','violet lighten-2','violet lighten-3','violet lighten-4', 'violet ', 'violet lighten-1','violet lighten-2','violet lighten-3','violet lighten-4',],
-              ['grey lighten-1','grey lighten-2','grey lighten-3','grey lighten-4', 'grey ', 'grey lighten-1','grey lighten-2','grey lighten-3','lgrey ighten-4',],
-              ['black lighten-1','black lighten-2','black lighten-3','black lighten-4', 'black ', 'black lighten-1','black lighten-2','black lighten-3','black lighten-4',],
+                {
+                  id: 0,
+                  name: 'primary',
+                  classes: ['primary lighten-1','primary lighten-2','primary lighten-3','primary lighten-4', 'primary ', 'primary darken-1','primary darken-2','primary darken-3','primary darken-4',]
+                },
+                {
+                   id: 1,
+                   name: 'secondary',
+                   classes: ['secondary lighten-1','secondary lighten-2','secondary lighten-3','secondary lighten-4', 'secondary ', 'secondary darken-1','secondary darken-2','secondary darken-3','secondary darken-4',],
+                },
+                {
+                   id: 2,
+                   name: 'success',
+                   classes: ['success lighten-1','success lighten-2','success lighten-3','success lighten-4', 'success ', 'success darken-1','success darken-2','success darken-3','success darken-4',],
+
+                },
+                {
+                   id: 3,
+                   name: 'danger',
+                  classes: ['danger lighten-1','danger lighten-2','danger lighten-3','danger lighten-4', 'danger ', 'danger darken-1','danger darken-2','danger darken-3','danger darken-4',],
+                },
+                {
+                   id: 4,
+                   name: 'warning',
+                   classes: ['warning lighten-1','warning lighten-2','warning lighten-3','warning lighten-4', 'warning ', 'warning darken-1','warning darken-2','warning darken-3','warning darken-4',],
+
+                },
+                {
+                   id: 5,
+                   name: 'muted',
+              classes: ['muted lighten-1','muted lighten-2','muted lighten-3','muted lighten-4', 'muted ', 'muted darken-1','muted darken-2','muted darken-3','muted darken-4',],
+                },
+                {
+                   id: 6,
+                   name: 'dark',
+              classes: ['dark lighten-1','dark lighten-2','dark lighten-3','dark lighten-4', 'dark ', 'dark darken-1','dark darken-2','dark darken-3','dark darken-4',],
+                },
+                {
+                   id: 7,
+                   name: 'light',
+
+              classes: ['light lighten-1','light lighten-2','light lighten-3','light lighten-4', 'light ', 'light darken-1','light darken-2','light darken-3','light darken-4',],
+                },
+                {
+                   id: 8,
+                   name: 'blue',
+
+              classes: ['blue lighten-1','blue lighten-2','blue lighten-3','blue lighten-4', 'blue ', 'blue darken-1','blue darken-2','blue darken-3','blue darken-4',],
+                },
+                {
+                   id: 9,
+                   name: 'green',
+                  classes: ['green lighten-1','green lighten-2','green lighten-3','green lighten-4', 'green ', 'green darken-1','green darken-2','green darken-3','green darken-4',],
+                },
+                {
+                   id: 10,
+                   name: 'yellow',
+                   classes: ['yellow lighten-1','yellow lighten-2','yellow lighten-3','yellow lighten-4', 'yellow ', 'yellow darken-1','yellow darken-2','yellow darken-3','yellow darken-4',],
+                },
+                {
+                   id: 11,
+                   name: 'orange',
+                   classes: ['orange lighten-1','orange lighten-2','orange lighten-3','orange lighten-4', 'orange ', 'orange darken-1','orange darken-2','orange darken-3','orange darken-4',],
+                },
+                {
+                   id: 12,
+                   name: 'pink',
+              classes: ['pink lighten-1','pink lighten-2','pink lighten-3','pink lighten-4', 'pink ', 'pink darken-1','pink darken-2','pink darken-3','pink darken-4',],
+                },
+                {
+                   id: 13,
+                   name: 'red',
+                   classes: ['red lighten-1','red lighten-2','red lighten-3','red lighten-4', 'red', 'red darken-1','red darken-2','red darken-3','red darken-4'],
+                },
+                {
+                   id: 14,
+                   name: 'purple',
+              classes: ['purple lighten-1','purple lighten-2','purple lighten-3','purple lighten-4', 'purple ', 'purple darken-1','purple darken-2','purple darken-3','purple darken-4',],
+                },
+                {
+                   id: 15,
+                   name: 'teal',
+                  classes: ['teal lighten-1','teal lighten-2','teal lighten-3','teal lighten-4', 'teal ', 'teal darken-1','teal darken-2','teal darken-3','teal darken-4',],
+                },
+                {
+                   id: 16,
+                   name: 'indigo',
+                   classes: ['indigo lighten-1','indigo lighten-2','indigo lighten-3','indigo lighten-4', 'indigo ', 'indigo darken-1','indigo darken-2','indigo darken-3','indigo darken-4',],
+                },
+                {
+                   id: 17,
+                   name: 'brown',
+                   classes: ['brown lighten-1','brown lighten-2','brown lighten-3','brown lighten-4', 'brown ', 'brown darken-1','brown darken-2','brown darken-3','brown darken-4',],
+                },
+                {
+                   id: 18,
+                   name: 'violet',
+                      classes: ['violet lighten-1','violet lighten-2','violet lighten-3','violet lighten-4', 'violet ', 'violet darken-1','violet darken-2','violet darken-3','violet darken-4',],
+                },
+                {
+                   id: 19,
+                   name: 'grey',
+                   classes: ['grey lighten-1','grey lighten-2','grey lighten-3','grey lighten-4', 'grey ', 'grey darken-1','grey darken-2','grey darken-3','grey ighten-4',],
+                },
+                {
+                   id: 20,
+                   name: 'black',
+                   classes: ['black darken-1','black lighten-2','black lighten-3','black lighten-4', 'black ', 'black darken-1','black darken-2','black darken-3','black lighten-4',],
+                },
           ]
         }
       }

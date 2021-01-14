@@ -96,12 +96,8 @@ p,
   text-decoration: underline !important;
 }
 
-.text-no-underline {
+.text-no-decoration {
   text-decoration: none !important;
-}
-
-.text-underline {
-  text-decoration: underline !important;
 }
 
 .text-line-through {
@@ -1625,7 +1621,6 @@ p,
   color: var(--pendeza-black-darken-4);
 }
 
-/* focus*/
 .text-primary\:focus:focus {
   color: var(--pendeza-primary);
 }

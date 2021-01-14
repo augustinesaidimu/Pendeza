@@ -25,6 +25,7 @@
 
   .list-item:hover {
     opacity: 0.9;
+    transition: opacity 0.7s ease-out;
   }
 
   .list-item.muted {

@@ -459,6 +459,7 @@ textarea[readonly] {
   --pendeza-shadow-3: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
   --pendeza-shadow-4: 0 0.8rem 2.5rem rgba(0, 0, 0, 0.4);
   --pendeza-shadow-5: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+  --pendeza-margin-bottom: 1rem;
 }
 
 h1,
@@ -1970,7 +1971,7 @@ h6,
   background-color: var(--pendeza-brown-lighten-1);
 }
 
-.brown\:hover:hover.lighten-2\:hover-hovered {
+.brown\:hover:hover.lighten-2\:hover:hover {
   background-color: var(--pendeza-brown-lighten-2);
 }
 
@@ -1978,7 +1979,7 @@ h6,
   background-color: var(--pendeza-brown-lighten-3);
 }
 
-.brown\:hover:hover.lighten-4\:hove\:hover {
+.brown\:hover:hover.lighten-4\:hover:hover {
   background-color: var(--pendeza-brown-lighten-4);
 }
 
@@ -1998,7 +1999,7 @@ h6,
   background-color: var(--pendeza-brown-darken-4);
 }
 
-.violet\:hover:hover-\:hover:hover {
+.violet\:hover:hover:hover:hover {
   background-color: var(--pendeza-violet);
 }
 
@@ -2010,7 +2011,7 @@ h6,
   background-color: var(--pendeza-violet-lighten-2);
 }
 
-.violet\:hover:hover.lighten-3\:hove\:hover {
+.violet\:hover:hover.lighten-3\:hover:hover {
   background-color: var(--pendeza-violet-lighten-3);
 }
 
@@ -2022,7 +2023,7 @@ h6,
   background-color: var(--pendeza-violet-darken-1);
 }
 
-.violet\:hove\:hover.darken-2\:hover:hover {
+.violet\:hover:hover.darken-2\:hover:hover {
   background-color: var(--pendeza-violet-darken-2);
 }
 
@@ -2038,7 +2039,7 @@ h6,
   background-color: var(--pendeza-grey);
 }
 
-.grey\:hove\:hover.lighten-1\:hover:hover {
+.grey\:hover:hover.lighten-1\:hover:hover {
   background-color: var(--pendeza-grey-lighten-1);
 }
 
@@ -2050,7 +2051,7 @@ h6,
   background-color: var(--pendeza-grey-lighten-3);
 }
 
-.grey\:hove\:hover.lighten-4\:hover:hover {
+.grey\:hover:hover.lighten-4\:hover:hover {
   background-color: var(--pendeza-grey-lighten-4);
 }
 
@@ -2960,12 +2961,8 @@ p,
   text-decoration: underline !important;
 }
 
-.text-no-underline {
+.text-no-decoration {
   text-decoration: none !important;
-}
-
-.text-underline {
-  text-decoration: underline !important;
 }
 
 .text-line-through {
@@ -4489,7 +4486,6 @@ p,
   color: var(--pendeza-black-darken-4);
 }
 
-/* focus*/
 .text-primary\:focus:focus {
   color: var(--pendeza-primary);
 }
@@ -5901,17 +5897,19 @@ h3,
 h4,
 h5,
 h6,
+p,
+img,
+canvas,
+button,
+table,
+input,
+label,
+textarea,
 .title,
 .subtitle,
-p,
-.lead,
-video,
 .video-responsive,
-img,
 .image-responsive,
-canvas,
 .list,
-button,
 .pagination,
 .navbar,
 .card,
@@ -5920,12 +5918,8 @@ button,
 .notification,
 .alert,
 .modal,
-.progress-bar,
-table,
-input,
-label,
-textarea {
-  margin-bottom: 1rem;
+.progress-bar {
+  margin-bottom: var(--pendeza-margin-bottom);
 }
 
 .m-0,
@@ -17865,6 +17859,7 @@ textarea {
 }
 .list .list-item:hover {
   opacity: 0.9;
+  transition: opacity 0.7s ease-out;
 }
 .list .list-item.muted {
   color: var(--pendeza-light);
@@ -18133,39 +18128,39 @@ textarea {
   background-color: var(--pendeza-black);
 }
 
-.bd-none {
+.bd-style-none {
   border-style: none;
 }
 
-.bd-dotted {
+.bd-style-dotted {
   border-style: dotted;
 }
 
-.bd-dashed {
+.bd-style-dashed {
   border-style: dashed;
 }
 
-.bd-solid {
+.bd-style-solid {
   border-style: solid;
 }
 
-.bd-groove {
+.bd-style-groove {
   border-style: groove;
 }
 
-.bd-ridge {
+.bd-style-ridge {
   border-style: ridge;
 }
 
-.bd-double {
+.bd-style-double {
   border-style: double;
 }
 
-.bd-inset {
+.bd-style-inset {
   border-style: inset;
 }
 
-.bd-outset {
+.bd-style-outset {
   border-style: outset;
 }
 
@@ -19234,7 +19229,7 @@ textarea {
 }
 
 .bd-muted\:hover:hover.darken-1\:hover:hover {
-  border-color: var(--pendeza-muted-darken-1);
+  border-color: var(--pendeza-muted-daredken-1);
 }
 
 .bd-muted\:hover:hover.darken-2\:hover:hover {
@@ -20584,8 +20579,8 @@ ul.pagination .pagination-button.dark {
   cursor: pointer;
 }
 .navbar .navbar-body span.navbar-button {
-  padding: 0.3rem 0.5rem;
   cursor: pointer;
+  margin-bottom: 0;
 }
 .navbar .navbar-body span.navbar-button:hover {
   opacity: 90%;
@@ -20633,8 +20628,8 @@ ul.pagination .pagination-button.dark {
   cursor: pointer;
 }
 .footer .footer-body .footer-button {
-  padding: 0.3rem 0.5rem;
   cursor: pointer;
+  margin-bottom: 0;
 }
 .footer .footer-body .footer-button:hover {
   opacity: 90%;
@@ -20673,10 +20668,7 @@ ul.pagination .pagination-button.dark {
   min-height: 3rem;
 }
 .card .card-body {
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
+  padding: 1rem 0.8rem;
 }
 .card .card-body .card-title {
   font-weight: inherit;
@@ -20718,7 +20710,7 @@ ul.pagination .pagination-button.dark {
 
 .jumbotron {
   background-color: var(--pendeza-jumbotron);
-  padding: 0.115rem 0.5rem;
+  padding: 1rem 0.8rem;
   min-height: 3rem;
 }
 
@@ -20726,7 +20718,7 @@ ul.pagination .pagination-button.dark {
   border-left: 0.6rem solid #1a1a1a;
   border-top-left-radius: 0.7rem;
   border-bottom-left-radius: 0.7rem;
-  padding-left: 0.9rem;
+  padding: 1rem 0.8rem;
   min-height: 3em;
 }
 .notepad .notepad-text {
@@ -20825,8 +20817,7 @@ ul.pagination .pagination-button.dark {
 }
 .notification .notification-body {
   position: relative;
-  padding: 0.115rem 1rem;
-  padding-top: 1rem;
+  padding: 1rem 0.8rem;
   border-bottom: 2px solid lightgrey;
 }
 .notification .notification-body .notification-title {
@@ -20863,7 +20854,7 @@ ul.pagination .pagination-button.dark {
   z-index: 1500;
 }
 .alert .alert-body {
-  padding: 0.115rem 1rem;
+  padding: 1rem 0.8rem;
   padding-top: 1rem;
   border-bottom: 2px solid lightgrey;
 }
@@ -20919,7 +20910,7 @@ ul.pagination .pagination-button.dark {
   transition: display 0.5s ease-in;
 }
 .modal .modal-body {
-  padding: 0.115rem 1rem;
+  padding: 1rem 0.8rem;
   padding-top: 1rem;
   border-bottom: 2px solid lightgrey;
 }
@@ -21931,12 +21922,12 @@ ul.pagination .pagination-button.dark {
     opacity: 0;
   }
 }
-.spin {
-  animation: spin-animation 2s linear infinite;
+.spin-clockwise {
+  animation: spin-clockwise-animation 2s linear infinite;
   position: absolute;
 }
 
-@keyframes spin-animation {
+@keyframes spin-clockwise-animation {
   from {
     transform: rotate(0deg);
   }
@@ -22107,31 +22098,7 @@ ul.pagination .pagination-button.dark {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  button,
-input,
-textarea,
-img,
-video,
-.image-responsive,
-.video-responsive,
-.navbar,
-.notepad,
-.notification,
-.modal,
-.card,
-.table,
-.list,
-.alert,
-.form,
-.form-group,
-.jumbotron,
-.progress-bar,
-.pagination,
-.dropstart,
-.dropup,
-.dropdown,
-.dropend,
-.fade {
+  * {
     -webkit-transition: none;
     transition: none;
   }
@@ -22807,229 +22774,224 @@ table.striped tr:nth-of-type(odd) {
   width: 100%;
 }
 
-.transition-ease {
+.trans-ease {
   transition: all ease 500ms;
 }
 
-.transition-ease-in {
+.trans-ease-in {
   transition: all ease-in 500ms;
 }
 
-.transition-ease-in-out {
+.trans-ease-in-out {
   transition: all ease-in-out 500ms;
 }
 
-.transition-ease-out {
+.trans-ease-out {
   transition: all ease-out 500ms;
 }
 
-.transition-linear {
+.trans-linear {
   transition: all linear 500ms;
 }
 
-.transition-ease-0\.5 {
+.trans-ease-0\.5 {
   transition: all ease 500ms;
 }
 
-.transition-ease-in-0\.5 {
+.trans-ease-in-0\.5 {
   transition: all ease-in 500ms;
 }
 
-.transition-ease-in-out-0\.5 {
+.trans-ease-in-out-0\.5 {
   transition: all ease-in-out 500ms;
 }
 
-.transition-ease-out-0\.5 {
+.trans-ease-out-0\.5 {
   transition: all ease-out 500ms;
 }
 
-.transition-linear-0\.5 {
+.trans-linear-0\.5 {
   transition: all linear 500ms;
 }
 
-.transition-ease-1 {
+.trans-ease-1 {
   transition: all ease 1000ms;
 }
 
-.transition-ease-in-1 {
+.trans-ease-in-1 {
   transition: all ease-in 1000ms;
 }
 
-.transition-ease-in-out-1 {
+.trans-ease-in-out-1 {
   transition: all ease-in-out 1000ms;
 }
 
-.transition-ease-out-1 {
+.trans-ease-out-1 {
   transition: all ease-out 1000ms;
 }
 
-.transition-linear-1 {
+.trans-linear-1 {
   transition: all linear 1000ms;
 }
 
-.transition-ease-1\.5 {
+.trans-ease-1\.5 {
   transition: all ease 1500ms;
 }
 
-.transition-ease-in-1\.5 {
+.trans-ease-in-1\.5 {
   transition: all ease-in 1500ms;
 }
 
-.transition-ease-in-out-1\.5 {
+.trans-ease-in-out-1\.5 {
   transition: all ease-in-out 1500ms;
 }
 
-.transition-ease-out-1\.5 {
+.trans-ease-out-1\.5 {
   transition: all ease-out 1500ms;
 }
 
-.transition-linear-1\.5 {
+.trans-linear-1\.5 {
   transition: all linear 1500ms;
 }
 
-.transition-ease-2 {
+.trans-ease-2 {
   transition: all ease 2000ms;
 }
 
-.transition-ease-in-2 {
+.trans-ease-in-2 {
   transition: all ease-in 2000ms;
 }
 
-.transition-ease-in-out-2 {
+.trans-ease-in-out-2 {
   transition: all ease-in-out 2000ms;
 }
 
-.transition-ease-out-2 {
+.trans-ease-out-2 {
   transition: all ease-out 2000ms;
 }
 
-.transition-linear-2 {
+.trans-linear-2 {
   transition: all linear 2000ms;
 }
 
-.transition-ease-2\.5 {
+.trans-ease-2\.5 {
   transition: all ease 2500ms;
 }
 
-.transition-ease-in-2\.5 {
+.trans-ease-in-2\.5 {
   transition: all ease-in 2500ms;
 }
 
-.transition-ease-in-out-2\.5 {
+.trans-ease-in-out-2\.5 {
   transition: all ease-in-out 2500ms;
 }
 
-.transition-ease-out-2\.5 {
+.trans-ease-out-2\.5 {
   transition: all ease-out 2500ms;
 }
 
-.transition-linear-2\.5 {
+.trans-linear-2\.5 {
   transition: all linear 2500ms;
 }
 
-.transition-ease-3 {
+.trans-ease-3 {
   transition: all ease 3000ms;
 }
 
-.transition-ease-in-3 {
+.trans-ease-in-3 {
   transition: all ease-in 3000ms;
 }
 
-.transition-ease-in-out-3 {
+.trans-ease-in-out-3 {
   transition: all ease-in-out 3000ms;
 }
 
-.transition-ease-out-3 {
+.trans-ease-out-3 {
   transition: all ease-out 3000ms;
 }
 
-.transition-linear-3 {
+.trans-linear-3 {
   transition: all linear 3000ms;
 }
 
-.transition-ease-3\.5 {
+.trans-ease-3\.5 {
   transition: all ease 3500ms;
 }
 
-.transition-ease-in-3\.5 {
+.trans-ease-in-3\.5 {
   transition: all ease-in 3500ms;
 }
 
-.transition-ease-in-out-3\.5 {
+.trans-ease-in-out-3\.5 {
   transition: all ease-in-out 3500ms;
 }
 
-.transition-ease-out-3\.5 {
+.trans-ease-out-3\.5 {
   transition: all ease-out 3500ms;
 }
 
-.transition-linear-3\.5 {
+.trans-linear-3\.5 {
   transition: all linear 3500ms;
 }
 
-.transition-ease-4 {
+.trans-ease-4 {
   transition: all ease 4000ms;
 }
 
-.transition-ease-in-4 {
+.trans-ease-in-4 {
   transition: all ease-in 4000ms;
 }
 
-.transition-ease-in-out-4 {
+.trans-ease-in-out-4 {
   transition: all ease-in-out 4000ms;
 }
 
-.transition-ease-out-4 {
+.trans-ease-out-4 {
   transition: all ease-out 4000ms;
 }
 
-.transition-linear-4 {
+.trans-linear-4 {
   transition: all linear 4000ms;
 }
 
-.transition-ease-4\.5 {
+.trans-ease-4\.5 {
   transition: all ease 4500ms;
 }
 
-.transition-ease-in-4\.5 {
+.trans-ease-in-4\.5 {
   transition: all ease-in 4500ms;
 }
 
-.transition-ease-in-out-4\.5 {
+.trans-ease-in-out-4\.5 {
   transition: all ease-in-out 4500ms;
 }
 
-.transition-ease-out-4\.5 {
+.trans-ease-out-4\.5 {
   transition: all ease-out 4500ms;
 }
 
-.transition-linear-4\.5 {
+.trans-linear-4\.5 {
   transition: all linear 4500ms;
 }
 
-.transition-ease-5 {
+.trans-ease-5 {
   transition: all ease 5000ms;
 }
 
-.transition-ease-in-5 {
+.trans-ease-in-5 {
   transition: all ease-in 5000ms;
 }
 
-.transition-ease-in-out-5 {
+.trans-ease-in-out-5 {
   transition: all ease-in-out 5000ms;
 }
 
-.transition-ease-out-5 {
+.trans-ease-out-5 {
   transition: all ease-out 5000ms;
 }
 
-.transition-linear-5 {
+.trans-linear-5 {
   transition: all linear 5000ms;
-}
-
-.dis-flex,
-.dis-flex\@phone {
-  display: flex;
 }
 
 .flex-wrap,
@@ -23138,10 +23100,6 @@ table.striped tr:nth-of-type(odd) {
 }
 
 @media (max-width: 21.875rem) {
-  .dis-flex\@small-phone {
-    display: flex;
-  }
-
   .flex-wrap\@small-phone {
     flex-wrap: wrap;
   }
@@ -23227,10 +23185,6 @@ table.striped tr:nth-of-type(odd) {
   }
 }
 @media (min-width: 38.35rem) and (max-width: 57rem) {
-  .dis-flex\@tablet {
-    display: flex;
-  }
-
   .flex-wrap\@tablet {
     flex-wrap: wrap;
   }
@@ -23316,10 +23270,6 @@ table.striped tr:nth-of-type(odd) {
   }
 }
 @media (min-width: 57rem) {
-  .dis-flex\@laptop {
-    display: flex;
-  }
-
   .flex-wrap\@laptop {
     flex-wrap: wrap;
   }

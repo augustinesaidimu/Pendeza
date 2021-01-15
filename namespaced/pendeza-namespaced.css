@@ -13995,6 +13995,11 @@ textarea,
   border: 0.7px solid var(--pendeza-dark);
   background-color: var(--pendeza-black); }
   
+.pn-bd {
+  border-color: var(--pendeza-black);
+  border-style: solid;
+  border-width: 0.5rem; }
+
 .pn-bd-style-none {
   border-style: none; }
 
